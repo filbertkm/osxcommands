@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+$file = fopen( $argv[1], 'r+' );
+
+if ( !$file ) {
+	die( "Cannot read file\n" );
+}
+
+ftruncate( $file, 0 );
+fclose( $file );
