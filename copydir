@@ -1,0 +1,2 @@
+#!/bin/sh
+tar pcf - .| (cd $1; tar pxf -)
